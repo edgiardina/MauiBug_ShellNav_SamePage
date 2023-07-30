@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiBug_ShellNav_SamePage.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiBug_ShellNav_SamePage"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+        Title="MainPage"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="mainpage" />
+        <ShellContent
+        Title="MainPAgeTwo"
+        ContentTemplate="{DataTemplate local:MainPageTwo}"
+        Route="mainpagetwo" />
+    </TabBar>
+</Shell>
